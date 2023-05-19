@@ -52,3 +52,8 @@ app.listen(PORT,()=>{
     console.log(`Server Listening At Port ${PORT}`)
 })
 ```
+<h2>Client Tools</h2>
+We are using PostMan as a Client Tool to test our application and its routes requests.
+
+<h2>Rate Limiting and Pricing</h2>
+The News API enforces rate limits on API requests to ensure fair usage. Different plans are available, including free and premium options, with varying limits and features. Refer to the News API website or documentation for details on pricing and rate limits.

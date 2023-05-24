@@ -14,7 +14,6 @@ app.get("/:country",async(req,res)=>{
     try {
         const country = req.params.country
         const newsData = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${newsAPI}`)
-        // res.status(200).json(newsData.data)
         let data = newsData.data.articles
         let articles = data.slice(0,5).map((x)=>(x.title))
         res.status(200).json({"The Top 5 Articles are" : articles})
